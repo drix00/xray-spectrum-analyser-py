@@ -32,7 +32,6 @@ Analyse energy dispersive spectrometer (EDS) spectrum and data obtained with an 
     :target: https://coveralls.io/github/drix00/xray-spectrum-analyser-py?branch=master
     :alt: Coveralls Coverage Status
 
-
 .. |appveyor| image:: https://ci.appveyor.com/api/projects/status/github/drix00/xray-spectrum-analyser-py?branch=master&svg=true
     :alt: AppVeyor Build Status
     :target: https://ci.appveyor.com/project/pytestbot/xray-spectrum-analyser-py
