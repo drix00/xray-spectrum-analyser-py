@@ -27,7 +27,7 @@ install:
 
 # command to run tests
 script:
-  - pytest --cov=xrayspectrumanalyser -cov-tests --cov-branch --cov-report xml
+  - pytest --cov=xrayspectrumanalyser --cov-tests --cov-branch --cov-report xml
 
 after_success:
   - coveralls
