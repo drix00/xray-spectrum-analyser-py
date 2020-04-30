@@ -2,10 +2,10 @@
 # -*- coding: utf-8 -*-
 
 """
-.. py:currentmodule:: module_name
+.. py:currentmodule:: tests.test_xrayspectrumanalyser
 .. moduleauthor:: Hendrix Demers <hendrix.demers@mail.mcgill.ca>
 
-Tests for the :py:mod:`module_name` module.
+Tests for the :py:mod:`xrayspectrumanalyser` module.
 """
 
 ###############################################################################
@@ -40,5 +40,5 @@ def test_is_discovered():
     Test used to validate the file is included in the tests
     by the test framework.
     """
-    assert False
-    # assert True
+    # assert False
+    assert True
