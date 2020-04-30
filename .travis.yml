@@ -1,0 +1,38 @@
+# Config file for automatic testing at travis-ci.org
+
+dist: bionic
+
+language: python
+cache: pip
+python:
+  - '3.6'
+  - '3.7'
+  - '3.8'
+
+matrix:
+  include:
+    - python: 3.5
+      dist: xenial
+
+# command to install dependencies
+before_install:
+  - python --version
+  - pip install --upgrade pip
+  - pip install --upgrade pytest
+  - pip install --upgrade coveralls
+
+install:
+  - pip install --upgrade -e .[develop]
+  - python3 setup.py build
+
+# command to run tests
+script:
+  - pytest --cov=xrayspectrumanalyser -cov-tests --cov-branch --cov-report xml
+
+after_success:
+  - coveralls
+
+notifications:
+  email:
+    on_success: never
+    on_failure: always
